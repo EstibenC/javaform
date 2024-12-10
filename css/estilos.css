@@ -1,0 +1,20 @@
+.borde {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.modal-header {
+    background-color: #5b03ad;
+}
+
+.modal-title {
+    color: white;
+}
+
+th {
+    border: 1px solid rgb(192, 192, 192);
+}
+
+h1 {
+    color: blue;
+}

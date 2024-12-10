@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <h1 id="Bienvenida" class="text-center"></h1>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dialogo1">Nuevo Usuario</button>
+            <button type="button" class="btn btn-danger" onclick="window.location.href='inicio.html'">Salir</button>
+        </div>
+        
+        <!-- Tabla de Usuarios -->
+        <div class="mt-4">
+            <table class="table table-striped" id="tablaUsuarios">
+                <thead>
+                    <tr>
+                        <th scope="col">S.No</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Ciudad</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Fecha Nacimiento</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Registro Usuario -->
+     <h1 class="Bienvenida"></h1>
+    <div class="modal fade" id="dialogo1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Registro Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formRegistro">
+                        <div class="mb-3">
+                            <label for="Nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control borde" id="Nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Edad" class="form-label">Edad</label>
+                            <input type="number" class="form-control borde" id="Edad" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Ciudad" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control borde" id="Ciudad" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo</label>
+                            <input type="email" class="form-control borde" id="correo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="FechaNacimiento" class="form-label">Fecha Nacimiento</label>
+                            <input type="date" class="form-control borde" id="FechaNacimiento" required>
+                        </div>
+                        <div class="text-end">
+                            <button type="button" class="btn btn-primary" id="btnGuardarUsuario">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/js.js"></script>
+    <script src="./js/bienvenida.js"></script>
+</body>
+</html>
